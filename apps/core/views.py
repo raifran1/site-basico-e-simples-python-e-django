@@ -6,5 +6,8 @@ from django.http import HttpResponseRedirect
 def index(request):
     return render(request,'site/index.html',{})
 
+def sitemap(request):
+    return render(request,'core/sitemap.xml',{})
+
 def contato(request):
     return render(request,'site/contact.html',{})
