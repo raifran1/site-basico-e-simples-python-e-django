@@ -1,0 +1,122 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <!--link rel="icon" type="image/png" href="images/icons/favicon.ico" -->
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login/bootstrap/css/bootstrap.min.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fonts/font-awesome-4.7.0/css/font-awesome.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fonts/Linearicons-Free-v1.0.0/icon-font.min.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login/animate/animate.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login/css-hamburgers/hamburgers.min.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login/animsition/css/animsition.min.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login/select2/select2.min.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login/daterangepicker/daterangepicker.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login/util.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login/main.css' %}">
+    <!--===============================================================================================-->
+</head>
+
+<body>
+
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50">
+                <form class="login100-form validate-form" action="" method="post">
+					{% csrf_token %}
+                    <a href="/">
+                        <span class="login100-form-title p-b-33">
+                                Fábrica de Gênios
+                            </span> 
+                        </a>
+                    {{ form.username.errors }}
+
+
+                    <div class="wrap-input100 validate-input" data-validate="Coloque seu Primeiro nome">
+                        <input class="input100" type="text" name="first_name" placeholder="Nome">
+                        <span class="focus-input100-1"></span>
+                        <span class="focus-input100-2"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Coloque seu Sobrenome">
+                        <input class="input100" type="text" name="last_name" placeholder="Sobrenome">
+                        <span class="focus-input100-1"></span>
+                        <span class="focus-input100-2"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Email Inválido">
+                        <input class="input100" type="email" name="email" placeholder="exemplo@exemplo.com">
+                        <span class="focus-input100-1"></span>
+                        <span class="focus-input100-2"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="O email não é igual">
+                        <input class="input100" type="text" name="username" placeholder="Confirmar Email">
+                        <span class="focus-input100-1"></span>
+                        <span class="focus-input100-2"></span>
+                    </div>
+
+                    <div class="wrap-input100 rs1 validate-input" data-validate="Senha deve conter mais de 8 dígitos">
+                        <input class="input100" type="password" name="password" placeholder="Senha">
+                        <span class="focus-input100-1"></span>
+                        <span class="focus-input100-2"></span>
+                    </div>
+
+
+                    <div class="container-login100-form-btn m-t-20">
+                        <button class="login100-form-btn" type="submit">
+							Cadastrar
+						</button>
+                    </div>
+
+                    <div class="text-center">
+                        <span class="txt1">
+							Já é Cadastrado?
+						</span>
+
+                        <a href="/accounts/login-usuario" class="txt2 hov1">
+							Faça o Login
+						</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!--chat-->
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9ffd7bd7-0611-47e3-a936-8c4c2bad4aa0";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+<!--chat-->
+
+    <!--===============================================================================================-->
+    <script src="{% static 'js/login/jquery/jquery-3.2.1.min.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'js/login/animsition/js/animsition.min.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'js/login/bootstrap/js/popper.js' %}"></script>
+    <script src="{% static 'js/login/bootstrap/js/bootstrap.min.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'js/login/select2/select2.min.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'js/login/daterangepicker/moment.min.js' %}"></script>
+    <script src="{% static 'js/login/daterangepicker/daterangepicker.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'js/login/countdowntime/countdowntime.js' %}"></script>
+    <!--===============================================================================================-->
+    <script src="{% static 'js/login/main.js' %}"></script>
+
+</body>
+
+</html>

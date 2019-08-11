@@ -1,0 +1,251 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Formare</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/icon.png">
+	<!-- Google font (font-family: 'Lobster', Open+Sans;) -->
+	<link href="https://fonts.googleapis.com/css?family=Lobster+Two:400,400i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/plugins.css' %}">
+
+	<!-- Cusom css -->
+   <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   <!--extrassssssss-->
+   <link rel="stylesheet" href="{% static 'css/spacing.min.css' %}">
+   <link rel="stylesheet" href="{% static 'css/plugins/animate.css' %}">
+   <link rel="stylesheet" href="{% static 'css/plugins/fakeloader.css' %}">
+   <link rel="stylesheet" href="{% static 'fontawesome-pro/css/all.css' %}">
+   <link rel="stylesheet" href="{% static 'css/plugins/lightbox.css' %}">
+   <link rel="stylesheet" href="{% static 'css/plugins/mainmenu.css' %}">
+   <link rel="stylesheet" href="{% static 'css/plugins/material-design-iconic-font.min.css' %}">
+   <link rel="stylesheet" href="{% static 'css/plugins/owl.carousel.min.css' %}">
+   <link rel="stylesheet" href="{% static 'css/plugins/owl.theme.default.min.css' %}">
+   <link rel="stylesheet" href="{% static 'css/plugins/slick.min.css' %}">
+   <link rel="stylesheet" href="{% static 'css/plugins/slider-animation.css' %}">
+   <link rel="stylesheet" href="{% static 'css/plugins/themify-icons.css' %}">
+
+	<!-- Modernizer js -->
+	<script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
+</head>
+<body>
+	<!--[if lte IE 9]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+	<![endif]-->
+
+	<!-- Add your site or application content here -->
+	
+	<!-- <div class="fakeloader"></div> -->
+
+	<!-- Main wrapper -->
+	<div class="wrapper" id="wrapper">
+		<!-- Header -->
+		<header id="header" class="jnr__header  header--2 clearfix">
+			<div class="mainmenu__wrapper bg--white sticky__header">
+				<div class="container">
+					<div class="row d-none d-lg-flex">
+						<div class="col-sm-4 col-md-6 col-lg-3 order-1 order-lg-1">
+							<div class="logo">
+								<a href="/">
+									<img class="img-responsive" src="{% static 'images/logo/junior.png' %}" alt="logo images">
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-2 col-lg-7 order-1 order-lg-1">
+							<!--div class="mainmenu__wrap">
+								<nav class="mainmenu__nav">
+                                    <ul class="mainmenu">
+                                        <li class="drop"><a href="index.html">Página Inicial</a></li>
+                                        <li class="drop"><a href="class-grid.html">Class</a></li>
+                                        <li class="drop"><a href="event-grid.html">Event</a></li>
+                                        <li class="drop"><a href="#">Pages</a>
+                                            <ul class="dropdown__menu">
+                                                <li><a href="about-us.html">about us</a></li>
+                                                <li><a href="service.html">our service</a></li>
+                                                <li><a href="class-details.html">class details</a></li>
+                                                <li><a href="gallery.html">gallery</a></li>
+                                                <li><a href="gallery-details.html">gallery Details</a></li>
+                                                <li><a href="cart.html">cart Page</a></li>
+                                                <li><a href="wishlist.html">wishlist page</a></li>
+                                                <li><a href="checkout.html">checkout page</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="drop"><a href="shop-grid.html">Shop</a> </li>
+                                        <li class="drop"><a href="blog-grid.html">Blog</a></li>
+                                        <li><a href="contact.html">Contatos</a></li>
+										<li><a class="login-trigger" href="#">Administrativo</a></li>
+									</ul>
+                                </nav>
+							</div-->
+						</div>
+						<div class="col-lg-1 col-sm-4 col-md-4 order-2 order-lg-3">
+							<div class="mainmenu__wrap">
+									<nav class="mainmenu__nav">
+										<ul class="mainmenu">
+											<li class="drop"><a href="/">Home</a></li>
+											<!--li class="drop"><a href="class-grid.html">Class</a></li>
+											<li class="drop"><a href="event-grid.html">Event</a></li>
+											<li class="drop"><a href="#">Pages</a>
+												<ul class="dropdown__menu">
+													<li><a href="about-us.html">about us</a></li>
+													<li><a href="service.html">our service</a></li>
+													<li><a href="class-details.html">class details</a></li>
+													<li><a href="gallery.html">gallery</a></li>
+													<li><a href="gallery-details.html">gallery Details</a></li>
+													<li><a href="cart.html">cart Page</a></li>
+													<li><a href="wishlist.html">wishlist page</a></li>
+													<li><a href="checkout.html">checkout page</a></li>
+												</ul>
+											</li>
+											<li class="drop"><a href="shop-grid.html">Shop</a> </li>
+											<li class="drop"><a href="blog-grid.html">Blog</a></li-->
+											<li><a href="/contato">Contatos</a></li>
+											<!--li><a class="login-trigger" href="#">Administrativo</a></li-->
+										</ul>
+									</nav>
+						</div>
+					</div>
+					</div>
+					<!-- Mobile Menu -->
+                    <div class="mobile-menu d-block d-lg-none">
+                    	<div class="logo">
+                    		<a href="/"><img class="img-responsive" src="{% static 'css/images/logo/mini_junior.png' %}" alt="logo"></a>
+                    	</div>
+                    	
+                    </div>
+                    <!-- Mobile Menu -->
+				</div>
+			</div>
+			<!-- End Mainmenu Area -->
+		</header>
+		<!-- //Header -->
+		</div>
+
+		{% block body %}
+		{% endblock body %}
+
+			<footer id="footer" style="background-image: url({% static 'images/bg/2.png' %})">
+					<div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+					  <div class=" container text-center">
+						<div class="footer-logo">
+						  <a href="/">
+							<div class="img-responsive" style="width: 250px; padding-top: 3px;">
+											<img src="{% static 'images/logo/2.png' %}" alt="logo images">
+							</div>
+						  </a>
+				
+						</div>
+						<div class="copyright">
+								<div class="container">
+									<div class="row align-items-center copyright__wrapper">
+										<div class="col-lg-6 col-md-6 col-sm-12">
+											<div class="coppy__right__inner">
+												<p>Copyright <i class="fa fa-copyright"></i>2019 --- Grupo Formare - CNPJ: 32.866.313/0001-13 </p>
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-12">
+											<div class="ftr__social__icon">
+												<ul class="dacre__social__link d-flex justify-content-center justify-content-md-end justify-content-lg-end">
+													<li class="facebook"><a target="_blank" href="https://www.facebook.com/carla.perratas?fref=search&__tn__=%2Cd%2CP-R&eid=ARCEd9TlOQaLripbk5wp_hWTO4h3enMcRSAnpCi6t3vqwvAQ8iJl-WOgED0ytuJVfR7_dTM_t-GXO47m"><i class="fab fa-facebook"></i></a></li>
+													<li class="instagram"><a target="_blank" href="https://instagram.com/reforcoformare?igshid=1t64livz5bvsp"><i class="fab fa-instagram"></i></a></li>
+													<li class="email"><a target="_blank" href="mailto:formareperratas@outlook.com"><i class="fa fa-envelope"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+				  </footer>
+        <!-- Register Form -->
+        <div class="accountbox-wrapper">
+            <div class="accountbox">
+                <div class="accountbox__inner">
+                	<h4>continue to register</h4>
+                    <div class="accountbox__login">
+                        <form action="#">
+                            <div class="single-input">
+                                <input  type="text" placeholder="User name">
+                            </div>
+                            <div class="single-input">
+                                <input type="email" placeholder="E-mail">
+                            </div>
+                            <div class="single-input">
+                                <input type="text" placeholder="Phone">
+                            </div>
+                            <div class="single-input">
+                                <input type="password" placeholder="Password">
+                            </div>
+                            <div class="single-input">
+                                <input type="password" placeholder="Confirm password">
+                            </div>
+                            <div class="single-input text-center">
+                                <button type="submit" class="sign__btn">Sign Up Now</button>
+                            </div>
+                            <div class="accountbox-login__others text-center">
+                                <h6>or register with</h6>
+                                <ul class="dacre__social__link d-flex justify-content-center">
+                                    <li class="facebook"><a target="_blank" href="https://www.facebook.com/"><span class="ti-facebook"></span></a></li>
+                                    <li class="twitter"><a target="_blank" href="https://twitter.com/"><span class="ti-twitter"></span></a></li>
+                                    <li class="pinterest"><a target="_blank" href="#"><span class="ti-google"></span></a></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                    <span class="accountbox-close-button"><i class="zmdi zmdi-close"></i></span>
+                </div>
+                <h3>Have an account ? Login Fast</h3>
+            </div>
+        </div><!-- //Register Form -->
+
+        <!-- Login Form -->
+        <div class="login-wrapper">
+            <div class="accountbox">
+                <div class="accountbox__inner">
+                	<h4>Coloque suas credenciais para continuar</h4>
+                    <div class="accountbox__login">
+                        <form action="#">
+                            <div class="single-input">
+                                <input type="email" placeholder="E-mail">
+                            </div>
+                            <div class="single-input">
+                                <input type="password" placeholder="Password">
+                            </div>
+                            <div class="single-input text-center">
+                                <button type="submit" class="sign__btn">ENTRAR</button>
+                            </div>
+                            <!--div class="accountbox-login__others text-center">
+                                <ul class="dacre__social__link d-flex justify-content-center">
+                                    <li class="facebook"><a target="_blank" href="https://www.facebook.com/"><span class="ti-facebook"></span></a></li>
+                                    <li class="twitter"><a target="_blank" href="https://twitter.com/"><span class="ti-twitter"></span></a></li>
+                                    <li class="pinterest"><a target="_blank" href="#"><span class="ti-google"></span></a></li>
+                                </ul>
+                            </div-->
+                        </form>
+                    </div>
+                    <span class="accountbox-close-button"><i class="zmdi zmdi-close"></i></span>
+                </div>
+                <h3>Sessão Apenas Para Administradores!</h3>
+            </div>
+        </div><!-- //Login Form -->
+
+	</div><!-- //Main wrapper -->
+
+	<!-- JS Files -->
+	<script src="{% static 'js/vendor/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'js/popper.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/plugins.js' %}"></script>
+	<script src="{% static 'js/active.js' %}"></script>
+</body>
+</html>

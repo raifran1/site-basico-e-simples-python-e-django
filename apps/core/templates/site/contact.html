@@ -1,0 +1,137 @@
+{% extends "core/base.html" %}
+{% load staticfiles %}
+{% block body %}
+        <div class="ht__bradcaump__area">
+            <div class="ht__bradcaump__container">
+            	<img src="{% static 'images/bg-png/6.png' %}" alt="bradcaump images">
+                <div class="container">
+                    <div class="row">
+						
+                        <div class="col-lg-12">
+                            <div class="bradcaump__inner text-center">
+                                <h2 class="bradcaump-title">Contatos</h2>
+                                <nav class="bradcaump-inner">
+                                  <a class="breadcrumb-item" href="/">Página Inicial</a>
+                                  <span class="brd-separetor"><img src="{% static 'images/icons/brad.png' %}" alt="separator images"></span>
+                                  <span class="breadcrumb-item active">Contatos</span>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Bradcaump area -->
+        <section class="page__contact bg--white section-padding--lg">
+        	<div class="container">
+        		<div class="row">
+        			<!-- Start Single Address -->
+        			<div class="col-md-6 col-sm-6 col-12 col-lg-4">
+        				<div class="address location">
+        					<div class="ct__icon">
+        						<i class="fa fa-home"></i>
+        					</div>
+							<div class="address__inner">
+								<h2>Localização do Formare</h2>
+								<p>Estamos localizados em Teresina - PI</p>
+								<ul>
+									<li>Quadra 05, Casa 11<br>  Renascença I</li>
+								</ul>
+							</div>
+        				</div>
+        			</div>
+        			<!-- End Single Address -->
+        			<!-- Start Single Address -->
+        			<div class="col-md-6 col-sm-6 col-12 col-lg-4 xs-mt-60">
+        				<div class="address phone">
+        					<div class="ct__icon">
+        						<i class="fa fa-phone"></i>
+        					</div>
+							<div class="address__inner">
+								<h2>Telefones</h2>
+								<p>Entre em contato pelos Telefones</p>
+								<ul>
+									<li><a href="tell:86995222643">86 995222643 - Principal</a></li>
+									<li><a href="tell:86995269002">86 995269002 - Secundário</a></li>
+								</ul>
+							</div>
+        				</div>
+        			</div>
+        			<!-- End Single Address -->
+        			<!-- Start Single Address -->
+        			<div class="col-md-6 col-sm-6 col-12 col-lg-4 md-mt-60 sm-mt-60">
+        				<div class="address email">
+        					<div class="ct__icon">
+        						<i class="fa fa-envelope"></i>
+        					</div>
+							<div class="address__inner">
+								<h2>E-mail</h2>
+								<p>Envie-nos um Email</p>
+								<ul>
+									<li><a href="mailto:formareperratas@outlook.com">formareperratas@outlook.com - Principal</a></li>
+									<li><a href="mailto:raifranlucas@outlook.com">raifranlucas@outlook.com - Secundário</a></li>
+								</ul>
+							</div>
+        				</div>
+        			</div>
+        			<!-- End Single Address -->
+        		</div>
+        	</div>
+		</section>
+		
+
+		<section style='padding: 300px 0; padding-top: 30px; padding-bottom: 300px;'>
+				<div class="col-md-12">
+				  <h2 class="text-center wow fadeInDown">Onde nos Encontrar</h2>
+				<div id="map" style='height:300px; position: relative; box-shadow: 0px 0px 10px 5px #f6f6f6; border-radius: 0.2px;'>
+				</div>
+		  </div>
+		  <br>
+		  <br>
+		  </section>
+
+
+        <!-- Start Contact Form -->
+        <section>
+				<script src="https://www.powr.io/powr.js?platform=cloudflare"></script><div class="powr-form-builder" id="4a498f20_1565009877"></div>
+		</section>
+
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZtTj2tvwsorp_DNPh3ZN_pMlSniet5h4&callback=initMap">
+</script>
+ <script>
+   
+  var marker;
+
+  function initMap() {
+	var map = new google.maps.Map(document.getElementById('map'), {
+	  zoom: 16,
+	  center: {lat: -5.10417928, lng: -42.74221838}
+	});
+	
+	marker = new google.maps.Marker({
+	  map: map,
+	  draggable: true,
+	  animation: google.maps.Animation.DROP,
+	  /* Change your location here*/
+	  position: {lat: -5.10417928, lng: -42.74221838}
+	  /* Change your location here*/
+	});
+	marker.addListener('click', toggleBounce);
+  }
+
+  function toggleBounce() {
+	if (marker.getAnimation() !== null) {
+	  marker.setAnimation(null);
+	} else {
+	  marker.setAnimation(google.maps.Animation.BOUNCE);
+	}
+  }
+
+</script>
+	   
+	 
+{% endblock body %}
+
+
