@@ -641,13 +641,13 @@ a#scrollUp {
 }
 
 a#scrollUp:hover {
-  background: #89d700;
+  background: #002172;
   color: #fff;
 }
 
 /* Define Colors */
 .color--theme {
-  color: #89d700;
+  color: #002172;
 }
 
 .color--light {
@@ -668,7 +668,7 @@ a#scrollUp:hover {
 
 /* Background Color */
 .bg--theme {
-  background: #89d700;
+  background: #002172;
 }
 
 .bg--light {
@@ -7921,7 +7921,7 @@ h3.widget-title-modal {
 }
 
 .bradcaump-inner a.breadcrumb-item:hover {
-  color: #89d700;
+  color: #002172;
 }
 
 .ht__bradcaump__container {
