@@ -5281,6 +5281,12 @@ Blocks Styles
   color: #002172;
 }
 
+
+.upcomming__event .upcomming__inner p a:hover {
+  color: #002172;
+}
+
+
 .upcomming__event .upcomming__inner h6 a::before {
   border: 1px dashed #d0d0d0;
   bottom: 0;
