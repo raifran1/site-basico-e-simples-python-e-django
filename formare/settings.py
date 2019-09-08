@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['www.rfcformare.com.br','rfcformare.herokuapp.com','rfcformare.com.br','localhost']
+ALLOWED_HOSTS = ['www.xn--rfformare-r3a.com.br','rfcformare.herokuapp.com','rfçformare.com.br','localhost','rfcformare.com.br','www.rfcformare.com.br']
 
 
 # Application definition
