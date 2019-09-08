@@ -5282,9 +5282,6 @@ Blocks Styles
 }
 
 
-.upcomming__event .upcomming__inner p a:hover {
-  color: #002172;
-}
 
 
 .upcomming__event .upcomming__inner h6 a::before {
@@ -5299,6 +5296,20 @@ Blocks Styles
 .upcomming__event .upcomming__inner p {
   margin-bottom: 30px;
   padding-right: 10%;
+}
+
+.upcomming__event .upcomming__inner p a {
+  color: #444444;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 30px;
+  padding-right: 10%;
+}
+
+.upcomming__event .upcomming__inner p a:hover {
+  color: #002172;
 }
 
 .upcomming__event .upcomming__inner .event__time li i {
