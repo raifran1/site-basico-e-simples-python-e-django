@@ -2,15 +2,16 @@ from django.db import models
 
 # Create your models here.
 class Cliente(models.Model):
-    nome = models.CharField(max_length=70)
-    CPF = models.CharField(max_length=17)
+    name = models.CharField(max_length=70)
+    cpfCnpj = models.CharField(max_length=17)
     email = models.EmailField(max_length=254) 
-    endereço = models.CharField(max_length=50, null=True,blank=True)
-    bairro = models.CharField(max_length=50, null=True,blank=True)
-    numero = models.IntegerField(null=True,blank=True)
+    mobilePhone = models.IntegerField()
+    postalCode = models.IntegerField()
+    addressNumber = models.IntegerField()
+    descricao_alunos = models.TextField()
     
     def __str__(self):
-        return self.nome
+        return self.name
 
 
 class Aluno(models.Model):

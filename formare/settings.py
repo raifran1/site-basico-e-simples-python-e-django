@@ -22,9 +22,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 SECRET_KEY = config('SECRET_KEY')
+
+ASAAS_API_KEY = config('ASAAS_API_KEY')
+ASAAS_API_URL = 'https://www.asaas.com/api/v3'
+
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['www.xn--rfformare-r3a.com.br','rfcformare.herokuapp.com','xn--rfformare-r3a.com.br','localhost','rfcformare.com.br','www.rfcformare.com.br']
+ALLOWED_HOSTS = ['www.xn--rfformare-r3a.com.br','rfcformare.herokuapp.com','xn--rfformare-r3a.com.br','localhost','rfcformare.com.br','www.rfcformare.com.br','192.168.12.2']
 
 
 # Application definition
@@ -39,6 +43,7 @@ INSTALLED_APPS = [
     'apps.clientes',
     'apps.accounts',
     'apps.core',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
