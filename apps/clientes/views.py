@@ -35,6 +35,7 @@ def create_customer(api_key='',id_cliente=id_cliente):
         'addressNumber': cliente.addressNumber
     }
     response = requests.post(url, data=json.dumps(JSON), headers=headers)
+    print(f'status_code: {response.status_code}, content: {response.content}')
     return {'status_code': response.status_code, 'content': response.content}
 
 def cadastro_cliente(request):
