@@ -44,8 +44,9 @@ def cadastro_cliente(request):
             f = form.save(commit=False)
             f.save()
             id_cliente = f.id 
-            create_customer(api_key='',id_cliente=id_cliente)
+            create_customer(api_key='dcd71de9262e83b037552ac37a0fc51dfbb2ac10038fe3d517b788a4d38671f1',id_cliente=id_cliente)
             return redirect(request.GET.get('next','/'))
         else:
+            print(form.errors)
             form = ClienteForm()
     return render(request,'clientes/pre_cadastro.html',{'form':form})
