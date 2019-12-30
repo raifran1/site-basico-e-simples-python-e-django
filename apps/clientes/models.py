@@ -5,7 +5,7 @@ class Cliente(models.Model):
     name = models.CharField(max_length=70)
     cpfCnpj = models.CharField(max_length=17)
     email = models.EmailField(max_length=254) 
-    mobilePhone = models.IntegerField()
+    mobilePhone = models.CharField(max_length=50)
     postalCode = models.IntegerField()
     addressNumber = models.IntegerField()
     descricao_alunos = models.TextField()
