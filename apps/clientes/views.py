@@ -3,7 +3,7 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 
 #configuração api asaas
-from django.conf import settings
+from formare import settings
 import requests
 import json
 import urlopen
@@ -15,7 +15,7 @@ from .models import Cliente
 def get_headers():
     headers = {
         'Content-Type': 'application/json',
-        'access_token': 'dcd71de9262e83b037552ac37a0fc51dfbb2ac10038fe3d517b788a4d38671f1'
+        'access_token': settings.ASAAS_API_KEY
     }
     return headers
 
