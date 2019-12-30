@@ -3,83 +3,86 @@
 {% load widget_tweaks %}
 {% block body %}
 
-<div class="ht__bradcaump__area">
-    <div class="ht__bradcaump__container">
-        <img src="{% static 'images1/bg-png/Matrícula-Online.png' %}" alt="bradcaump images">
+
+
+
+<div class="slide__carosel owl-carousel owl-theme">
+    <div style="background-image: url({% static 'images1/bg-png/Matrícula-Online.png' %}); background-repeat: no-repeat;background-size: cover;background-position: center center;" class="slider__area  d-flex fullscreen justify-content-start align-items-center">
         <div class="container">
             <div class="row">
-                
-                <div class="col-lg-12">
-                    <div class="bradcaump__inner text-center">
-                        <h2 class="bradcaump-title">Pré-Matrícula 2020</h2>
-                        <!--nav class="bradcaump-inner">
-                          <a class="breadcrumb-item" href="/">Página Inicial</a>
-                          <span class="brd-separetor"><img src="{% static 'images/icons/brad.png' %}" alt="separator images"></span>
-                          <span class="breadcrumb-item active">Contatos</span>
-                        </nav-->
+                <div class="col-md-12 col-lg-12 col-sm-12">
+                    <div class="slider__activation">
+                        <!-- Start Single Slide -->
+                        <!-- End Single Slide -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<form class="form-group" action="" method="post">
-    {% csrf_token %}
-    <br>
-    
-    <h2 style="font-family: Arial;" align='center'>DADOS DO RESPONSÁVEL</h2>
 
-    <br>   
-    
-    <div class="col col-sm-12" align='center'>
-        <input class="form-control col-sm-6 col-auto" type="text" name="name" placeholder="Digite seu nome COMPLETO" required>
-    </div>
 
-    <br>   
-    
-    <div class="col col-sm-12" align='center'>
-        <input class="form-control col-sm-6 col-auto" type="text" name="cpfCnpj" placeholder="CPF - (SOMENTE NÚMEROS)" required>
-    </div>
+<div class="container" style="padding-top: 50px; border: 10px;">
 
-    <br>   
-    
-    <div class="col col-sm-12" align='center'>
-        <input class="form-control col-sm-6 col-auto" type="email" name="email" placeholder="EMAIL - (VÁLIDO)" >
-    </div>
+    <form class="form-group" action="" method="post">
+        {% csrf_token %}
+        <br>
+        
+        <h2 style="font-family: Arial;" align='center'>DADOS DO RESPONSÁVEL</h2>
 
-    <br>   
-    
-    <div class="col col-sm-12" align='center'>
-        <input class="form-control col-sm-6 col-auto" type="text" name="mobilePhone" placeholder="NÚMERO DE TELEFONE COM DDD - (VÁLIDO)" >
-    </div>
+        <br>   
+        
+        <div class="col col-sm-12" align='center'>
+            <input class="form-control col-sm-6 col-auto" type="text" name="name" placeholder="Digite seu nome COMPLETO" required>
+        </div>
 
-    <br>   
-    
-    <div class="col col-sm-12" align='center'>
-        <input class="form-control col-sm-6 col-auto" type="text" name="postalCode" placeholder="CEP RESIDENCIAL - (VÁLIDO)" >
-    </div>
+        <br>   
+        
+        <div class="col col-sm-12" align='center'>
+            <input class="form-control col-sm-6 col-auto" type="text" name="cpfCnpj" placeholder="CPF - (SOMENTE NÚMEROS)" required>
+        </div>
 
-    <br>   
-    
-    <div class="col col-sm-12" align='center'>
-        <input class="form-control col-sm-6 col-auto" type="text" name="addressNumber" placeholder="NÚMERO DA CASA" >
-    </div>
+        <br>   
+        
+        <div class="col col-sm-12" align='center'>
+            <input class="form-control col-sm-6 col-auto" type="email" name="email" placeholder="EMAIL - (VÁLIDO)" >
+        </div>
 
-    <br>   
-    
-    <div class="col col-sm-9" style="padding-left: 25.5%;">
-        <p>Nome dos Alunos do Responsável </p>
-        {{ form.descricao_alunos|add_class:'form-control' }}
-    </div>
-    
-    <br>
-    
-    <div class='col col-sm-12' align='center'>
-        <button type="submit" class='btn btn-primary btn-sm'>
-            Confirmar Matrícula 2020.1
-        </button>
-    </div>
-</form>  
+        <br>   
+        
+        <div class="col col-sm-12" align='center'>
+            <input class="form-control col-sm-6 col-auto" type="text" name="mobilePhone" placeholder="NÚMERO DE TELEFONE COM DDD - (VÁLIDO)" >
+        </div>
+
+        <br>   
+        
+        <div class="col col-sm-12" align='center'>
+            <input class="form-control col-sm-6 col-auto" type="text" name="postalCode" placeholder="CEP RESIDENCIAL - (VÁLIDO)" >
+        </div>
+
+        <br>   
+        
+        <div class="col col-sm-12" align='center'>
+            <input class="form-control col-sm-6 col-auto" type="text" name="addressNumber" placeholder="NÚMERO DA CASA" >
+        </div>
+
+        <br>   
+        
+        <div class="col col-sm-12" align='center'>
+            <p>Nome dos Alunos do Responsável </p>
+            {{ form.descricao_alunos|add_class:'form-control' }}
+        </div>
+
+        <br>
+        
+        <div class='col col-sm-12' align='center'>
+            <button type="submit" class='btn btn-primary btn-sm'>
+                Confirmar Matrícula 2020.1
+            </button>
+        </div>
+    </form>
+
+</div>
 <!--
 
 
