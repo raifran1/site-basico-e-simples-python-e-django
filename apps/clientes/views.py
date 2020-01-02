@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+from django.contrib import messages
 
 #configuração api asaas
 from formare.settings import ASAAS_API_KEY, ASAAS_API_URL
@@ -46,8 +47,12 @@ def cadastro_cliente(request):
             f.save()
             id_cliente = f.id 
             create_customer(api_key='',id_cliente=id_cliente)
-            return redirect(request.GET.get('next','/'))
+            return redirect(request.GET.get('next','/cliente/matricula/concluida/'))
         else:
             print(form.errors)
+            messages.error(request, form.errors)
             form = ClienteForm()
     return render(request,'clientes/pre_cadastro.html',{'form':form})
+
+def matricula_concluida(request):
+    return render(request,'clientes/concluido.html',{})

@@ -23,7 +23,11 @@
 
 
 <div class="container" style="padding-top: 50px; border: 10px;">
-
+    <div class="alert alert-info" role="alert">
+        {% for message in messages %} 
+            {{ message }} 
+        {% endfor %}
+    </div>
     <form class="form-group" action="" method="post">
         {% csrf_token %}
         <br>

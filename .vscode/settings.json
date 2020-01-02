@@ -1,3 +1,4 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "python.pythonPath": "/home/raifran/anaconda3/envs/*1_JS_Portais/bin/python"
 }

@@ -5,4 +5,5 @@ from . import views
 app_name='clientes'
 urlpatterns = [
     path('cadastro/2020/',views.cadastro_cliente),
+    path('matricula/concluida/',views.matricula_concluida),
 ]
