@@ -28,7 +28,7 @@ class TurmaAdmin(admin.ModelAdmin):
 
 @admin.register(Financeiro)
 class FinanceiroAdmin(admin.ModelAdmin):
-    list_display = ('cliente', 'preco_mensalidade','vencimento','matricula', 'feveveiro', 'marco', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro', )
+    list_display = ('cliente', 'preco_mensalidade','preco_matricula','vencimento','matricula', 'feveveiro', 'marco', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro', )
     search_fields = ('cliente',)
     # list_filter = ('serie','turma')
     list_editable = ('matricula', 'feveveiro', 'marco', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro', )
