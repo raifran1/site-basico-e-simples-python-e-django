@@ -4,7 +4,7 @@ from .models import Cliente, Aluno, Turma, Financeiro
 
 @admin.register(Cliente)
 class ClienteAdmin(admin.ModelAdmin):
-    list_display = ('name', 'cpfCnpj','mobilePhone')
+    list_display = ('name', 'cpfCnpj','mobilePhone','descricao_alunos')
     search_fields = ('name','cpfCnpj')
     #list_filter = ('status_disponibilidade')
     #list_editable = ('status_disponibilidade',)
