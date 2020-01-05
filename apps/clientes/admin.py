@@ -13,7 +13,7 @@ class ClienteAdmin(admin.ModelAdmin):
 @admin.register(Aluno)
 class AlunoAdmin(admin.ModelAdmin):
     list_display = ('nome_aluno', 'serie','turma','financeiro')
-    search_fields = ('nome_aluno','escola',)
+    search_fields = ('nome_aluno',)
     list_filter = ('serie','turma',)
     list_editable = ('turma',)
 

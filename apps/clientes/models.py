@@ -56,6 +56,11 @@ class Turma(models.Model):
     horario_inicial = models.TimeField(auto_now=False, auto_now_add=False)
     horario_final = models.TimeField(auto_now=False, auto_now_add=False)
 
+    class Meta:
+        verbose_name = u'Turma'
+        verbose_name_plural = u'Turmas'
+        ordering = ['nome_turma']
+
     def __str__(self):
         return self.nome_turma
 
