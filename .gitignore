@@ -2,6 +2,8 @@
 .idea
 # If you are using sqlite3
 *.sqlite3
+requirements-dev.txt
+requirements.txt
 # Name of your virtuan env
 .formare
 *pyc
