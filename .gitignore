@@ -4,6 +4,7 @@
 *.sqlite3
 requirements-dev.txt
 requirements.txt
+static_root
 # Name of your virtuan env
 .formare
 *pyc
