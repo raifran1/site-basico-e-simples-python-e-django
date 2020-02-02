@@ -26,8 +26,8 @@ SECRET_KEY = config('SECRET_KEY')
 ASAAS_API_KEY = config('ASAAS_API_KEY')
 ASAAS_API_URL = 'https://www.asaas.com/api/v3'
 
-# DEBUG = config('DEBUG', default=False, cast=bool)
-DEBUG = False
+DEBUG = config('DEBUG', default=False, cast=bool)
+# DEBUG = False
 
 ALLOWED_HOSTS = ['*','www.xn--rfformare-r3a.com.br','rfcformare.herokuapp.com','xn--rfformare-r3a.com.br','rfcformare.com.br','www.rfcformare.com.br','192.168.12.2','www.localhost']
 
