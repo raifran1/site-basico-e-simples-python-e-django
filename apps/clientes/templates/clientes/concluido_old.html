@@ -1,0 +1,41 @@
+{% extends "core/base.html" %}
+{% load staticfiles %}
+{% load widget_tweaks %}
+{% block body %}
+
+<div class="slide__carosel owl-carousel owl-theme">
+    <div style="background-image: url({% static 'images1/bg-png/Matrícula-Online.png' %}); background-repeat: no-repeat;background-size: cover;background-position: center center;" class="slider__area  d-flex fullscreen justify-content-start align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12">
+                    <div class="slider__activation">
+                        <!-- Start Single Slide -->
+                        <!-- End Single Slide -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class='container'>
+    <br>
+    <h4 align='center'>
+        Olha só que bacana, você acabou de confirmar sua matrícula 2020.1!
+    </h4>
+    <br>
+
+    <div class="alert alert-success" role="alert">
+        Agora, aguarde quando confirmamos seus dados, assim que confirmado será enviado via EMAIL e SMS o seu boleto de matrícula!
+    </div>
+    <br>
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+

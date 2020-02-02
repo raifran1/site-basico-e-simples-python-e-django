@@ -7,7 +7,7 @@
 
 
 <div class="slide__carosel owl-carousel owl-theme">
-    <div style="background-image: url({% static 'images1/bg-png/Matrícula-Online.png' %}); background-repeat: no-repeat;background-size: cover;background-position: center center;" class="slider__area  d-flex fullscreen justify-content-start align-items-center">
+    <div style="background-image: url({% static 'images/bg-png/Matrícula-Online.png' %}); background-repeat: no-repeat;background-size: cover;background-position: center center;" class="slider__area  d-flex fullscreen justify-content-start align-items-center">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-12 col-sm-12">
@@ -21,66 +21,76 @@
     </div>
 </div>
 
+<div class="container" style="padding-top: 25px; border: 30px; padding-bottom: 25px">
+    <div class="alert alert-info" role="alert" align="center">
+        <p>Matriculas Encerradas!</p>
+        <p>
+            Caso ainda tenha interesse entre em contato conosco em um de <a href="/contato" class="alert-link">nossos canais de atendimento</a>
+            ou compareça à nossa unidade, acesse o endereço <a target="_blank" href="https://g.page/rfcformare?share" class="alert-link">neste link.</a>
+        </p>
+    </div>
+</div>
 
+<!--
 <div class="container" style="padding-top: 50px; border: 10px;">
     {% if message %}
         <div class="alert alert-info" role="alert">
-            {% for message in messages %} 
-                {{ message }} 
+            {% for message in messages %}
+                {{ message }}
             {% endfor %}
         </div>
     {% else %}
     {% endif %}
     <form class="form-group" action="" method="post">
         {% csrf_token %}
-        
+
         <h2 style="font-family: Arial;" align='center'>DADOS DO RESPONSÁVEL</h2>
 
-        <br>   
-        
+        <br>
+
         <div class="col col-sm-12" align='center'>
             <input class="form-control col-sm-6 col-auto" type="text" name="name" placeholder="Digite seu nome COMPLETO" required>
         </div>
 
-        <br>   
-        
+        <br>
+
         <div class="col col-sm-12" align='center'>
             <input class="form-control col-sm-6 col-auto" type="text" name="cpfCnpj" placeholder="CPF - (SOMENTE NÚMEROS)" required>
         </div>
 
-        <br>   
-        
+        <br>
+
         <div class="col col-sm-12" align='center'>
             <input class="form-control col-sm-6 col-auto" type="email" name="email" placeholder="EMAIL - (VÁLIDO)" >
         </div>
 
-        <br>   
-        
+        <br>
+
         <div class="col col-sm-12" align='center'>
             <input class="form-control col-sm-6 col-auto" type="text" name="mobilePhone" maxlength="11" placeholder="NÚMERO DE TELEFONE COM DDD" >
         </div>
 
-        <br>   
-        
+        <br>
+
         <div class="col col-sm-12" align='center'>
             <input class="form-control col-sm-6 col-auto" type="text" name="postalCode" placeholder="CEP RESIDENCIAL - (VÁLIDO)" >
         </div>
 
-        <br>   
-        
+        <br>
+
         <div class="col col-sm-12" align='center'>
             <input class="form-control col-sm-6 col-auto" type="text" name="addressNumber" placeholder="NÚMERO DA CASA" >
         </div>
 
-        <br>   
-        
+        <br>
+
         <div class="col col-sm-12" align='center'>
             <p>Nome dos Alunos do Responsável </p>
             {{ form.descricao_alunos|add_class:'form-control' }}
         </div>
 
         <br>
-        
+
         <div class='col col-sm-12' align='center'>
             <button type="submit" class='btn btn-primary btn-sm'>
                 Confirmar Matrícula 2020.1
@@ -89,12 +99,5 @@
     </form>
 
 </div>
-<!--
-
-
-mobilePhone
-postalCode
-addressNumber
-descricao_alunos
 -->
 {% endblock %}
