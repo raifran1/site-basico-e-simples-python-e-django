@@ -15,6 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from django.conf.urls.static import static
+from django.conf import settings
+
+
 from apps.website import urls as formare_urls
 from apps.accounts import urls as accounts_urls
 from apps.clientes import urls as clientes_urls
@@ -27,5 +31,4 @@ urlpatterns = [
     path('accounts/', include(accounts_urls)),
     path('cliente/', include(clientes_urls)),
     path('sitemap.xml',views.sitemap),
-    
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
